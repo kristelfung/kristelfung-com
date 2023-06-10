@@ -10,11 +10,14 @@ collections:
   - name: home
     label: Home
     folder: src/content/home
+    create: true
     fields:
       - { name: title, label: Title }
+      - { name: subtitle, label: Subtitle }
   - name: about
     label: About
     folder: src/content/about
+    create: true
     fields:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
