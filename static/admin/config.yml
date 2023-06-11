@@ -12,6 +12,7 @@ collections:
     folder: src/content/home
     slug: home
     fields:
+      - { name: page, label: Page }
       - { name: title, label: Title }
       - { name: subtitle, label: Subtitle }
   - name: about
@@ -19,6 +20,7 @@ collections:
     folder: src/content/about
     slug: about
     fields:
+      - { name: page, label: Page }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: blog
@@ -26,6 +28,7 @@ collections:
     folder: src/content/blog
     slug: blog
     fields:
+      - { name: page, label: Page }
       - { name: title, label: Title }
   - name: post
     label: Post

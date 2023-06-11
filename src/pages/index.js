@@ -19,7 +19,7 @@ const HomePage = ({data}) => {
 
 export const query = graphql`
   query {
-    markdownRemark(frontmatter: { slug: { eq: "/" }}) {
+    markdownRemark(frontmatter: { page: { eq: "home" }}) {
       frontmatter {
         title
         subtitle
