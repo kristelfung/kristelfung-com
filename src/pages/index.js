@@ -1,16 +1,18 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
 
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+
 const HomePage = ({data}) => {
-  console.log("bitch hello")
-  console.log(data)
   const { markdownRemark } = data
-  console.log(markdownRemark)
   const { title, subtitle } = markdownRemark.frontmatter
   return (
     <div>
+      <Navbar/>
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
+      <Footer/>
     </div>
   )
 }

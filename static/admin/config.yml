@@ -10,28 +10,25 @@ collections:
   - name: home
     label: Home
     folder: src/content/home
-    create: true
     fields:
-      - { name: slug, label: Slug }
+    slug: home
       - { name: title, label: Title }
       - { name: subtitle, label: Subtitle }
   - name: about
     label: About
     folder: src/content/about
-    create: true
     fields:
-      - { name: slug, label: Slug }
+    slug: about
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: blog
     label: Blog
     folder: src/content/blog
-    create: true
+    slug: blog
     fields:
-      - { name: slug, label: Slug }
       - { name: title, label: Title }
   - name: post
-    label: Blog Post
+    label: Post
     folder: src/content/blog/posts
     create: true
     fields:
