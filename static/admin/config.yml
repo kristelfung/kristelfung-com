@@ -9,28 +9,30 @@ public_folder: /assets
 collections:
   - name: home
     label: Home
-    folder: src/content/
+    folder: src/content/home
+    create: true
     fields:
       - { name: slug, label: Slug }
       - { name: title, label: Title }
       - { name: subtitle, label: Subtitle }
   - name: about
     label: About
-    folder: src/content/
+    folder: src/content/about
+    create: true
     fields:
       - { name: slug, label: Slug }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: blog
     label: Blog
-    folder: src/content/
+    folder: src/content/blog
     create: true
     fields:
       - { name: slug, label: Slug }
       - { name: title, label: Title }
   - name: post
     label: Blog Post
-    folder: src/content/posts
+    folder: src/content/blog/posts
     create: true
     fields:
       - { name: slug, label: Slug }
