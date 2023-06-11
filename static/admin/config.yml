@@ -10,15 +10,15 @@ collections:
   - name: home
     label: Home
     folder: src/content/home
-    fields:
     slug: home
+    fields:
       - { name: title, label: Title }
       - { name: subtitle, label: Subtitle }
   - name: about
     label: About
     folder: src/content/about
-    fields:
     slug: about
+    fields:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: blog
