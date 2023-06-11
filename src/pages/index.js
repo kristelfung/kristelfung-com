@@ -11,7 +11,7 @@ const HomePage = ({data}) => {
     <div>
       <Navbar/>
       <h1>{title}</h1>
-      <h2>{subtitle}</h2>
+      <h1>{subtitle}</h1>
       <Footer/>
     </div>
   )

@@ -1,5 +1,5 @@
 ---
 page: about
-title: more on me la la la
+title: more on me...
 ---
-t﻿ext here
+text here
