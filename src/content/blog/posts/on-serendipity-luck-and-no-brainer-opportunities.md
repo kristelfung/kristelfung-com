@@ -1,4 +1,5 @@
 ---
+page: post
 slug: /on-serendipity-luck-and-no-brainer-opportunities
 title: on serendipity, luck, and no brainer opportunities
 date: 2023-06-10T10:59:31.331Z

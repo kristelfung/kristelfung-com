@@ -35,6 +35,7 @@ collections:
     folder: src/content/blog/posts
     create: true
     fields:
+      - { name: page, label: Page }
       - { name: slug, label: Slug }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
