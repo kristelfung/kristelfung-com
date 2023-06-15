@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Navbar from "./components/navbar";
 
@@ -15,8 +15,13 @@ const BlogPage = ({data}) => {
       <h1>{frontmatter.title}</h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title
+        const slug = node.frontmatter.slug
 
-        return <h2>{title}</h2>
+        return (
+          <div key={node.id}>
+            <Link to={`/blog/${slug}`}>{title}</Link>
+          </div>
+        )
       })}
     </div>
   )
@@ -32,8 +37,10 @@ export const query = graphql`
     allMarkdownRemark(filter: { frontmatter: { page: { eq: "post" }}}) {
       edges {
         node {
+          id
           frontmatter {
             title
+            slug
           }
           html
         }
