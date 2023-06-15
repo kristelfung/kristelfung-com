@@ -1,11 +1,12 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 const Navbar = () => {
   return (
     <div>
-      <a href="/">home</a>
-      <a href="/about">about</a>
-      <a href="/blog">blog</a>
+      <Link to="/">home</Link>
+      <Link to="/about">about</Link>
+      <Link to="/blog">blog</Link>
     </div>
   )
 }
