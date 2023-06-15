@@ -7,7 +7,9 @@ const BlogPage = ({data}) => {
   const { markdownRemark, allMarkdownRemark } = data
   const { frontmatter } = markdownRemark
 
-  const posts = allMarkdownRemark.edges
+  const posts = allMarkdownRemark.edges.sort((a, b) => {
+    return new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date)
+  })
   
   return (
     <div>
@@ -16,10 +18,12 @@ const BlogPage = ({data}) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title
         const slug = node.frontmatter.slug
+        const date = node.frontmatter.date
 
         return (
           <div key={node.id}>
             <Link to={`/blog/${slug}`}>{title}</Link>
+            <p>{date}</p>
           </div>
         )
       })}
@@ -41,6 +45,7 @@ export const query = graphql`
           frontmatter {
             title
             slug
+            date(formatString: "MMMM DD, YYYY")
           }
           html
         }
