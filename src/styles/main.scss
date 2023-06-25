@@ -1,0 +1,14 @@
+// Import your custom variables
+@import 'variables';
+
+// Import the main Bulma styles
+@import '~bulma/bulma';
+
+// Import custom styles
+@import 'base';
+@import 'components/navbar';
+@import 'components/footer';
+
+// Import styles for each page
+@import 'index';
+@import 'blog';

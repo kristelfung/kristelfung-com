@@ -7,9 +7,9 @@ const AboutPage = ({data}) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <div>
+    <div className="container is-max-widescreen">
       <Navbar/>
-      <h1>{frontmatter.title}</h1>
+      <h1 className="title is-1">{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{__html: html}}>
       </div>
     </div>

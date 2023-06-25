@@ -12,18 +12,18 @@ const BlogPage = ({data}) => {
   })
   
   return (
-    <div>
+    <div className="container is-max-widescreen">
       <Navbar/>
-      <h1>{frontmatter.title}</h1>
+      <h1 className="title is-1">{frontmatter.title}</h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title
         const slug = node.frontmatter.slug
         const date = node.frontmatter.date
 
         return (
-          <div key={node.id}>
-            <Link to={`/blog/${slug}`}>{title}</Link>
-            <p>{date}</p>
+          <div key={node.id} className="blog-link">
+            <h3 className="title is-3"><Link to={`/blog/${slug}`}>{title}</Link></h3>
+            <h5 className="subtitle is-5">{date.toLowerCase()}</h5>
           </div>
         )
       })}
