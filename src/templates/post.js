@@ -8,7 +8,12 @@ function BlogPostTemplate(props) {
   return (
     <div className="container is-max-widescreen">
       <Navbar/>
-      <Link to="/blog">back to posts</Link>
+      <div className="post-back">
+        <Link to="/blog" className="back-item">
+          &lt;&lt; back to posts
+          <span className="back-item-hover"></span>
+        </Link>
+      </div>
       <h1 className="title is-1">{post.frontmatter.title}</h1>
       <h4 className="subtitle is-4">{post.frontmatter.date.toLowerCase()}</h4>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />

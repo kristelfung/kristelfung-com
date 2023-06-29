@@ -16,7 +16,7 @@ const HomePage = ({data}) => {
         <div className="container is-max-widescreen">
           <h1 className="title is-1">{title}</h1>
           <h1 className="title is-1">{subtitle}</h1>
-          <img src={homeImg} />
+          <img src={homeImg} alt="kristel on laptop"/>
         </div>
       </div>
       <Footer/>

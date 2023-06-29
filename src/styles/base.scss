@@ -17,3 +17,7 @@ body {
 p {
   margin: 2rem 0rem;
 }
+
+a, a:hover, a:focus {
+  color: $text;
+}

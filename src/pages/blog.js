@@ -21,9 +21,10 @@ const BlogPage = ({data}) => {
         const date = node.frontmatter.date
 
         return (
-          <div key={node.id} className="blog-link">
+          <div key={node.id} className="blog-item">
             <h3 className="title is-3"><Link to={`/blog/${slug}`}>{title}</Link></h3>
             <h5 className="subtitle is-5">{date.toLowerCase()}</h5>
+            <span className="blog-item-hover"></span>
           </div>
         )
       })}

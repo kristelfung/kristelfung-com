@@ -8,9 +8,18 @@ const Navbar = () => {
         <div className="container is-max-widescreen">
           <div className="navbar-menu">
             <div className="navbar-end">
-              <Link className="navbar-item" to="/">home</Link>
-              <Link className="navbar-item" to="/about">about</Link>
-              <Link className="navbar-item" to="/blog">blog</Link>
+              <Link className="navbar-item" to="/">
+                home
+                <span className="navbar-item-hover"></span>
+              </Link>
+              <Link className="navbar-item" to="/about">
+                about
+                <span className="navbar-item-hover"></span>
+              </Link>
+              <Link className="navbar-item" to="/blog">
+                blog
+                <span className="navbar-item-hover"></span>
+              </Link>
             </div>
           </div>
         </div>

@@ -5,4 +5,26 @@
 .navbar-item {
   padding: 0rem;
   margin: 0rem 2rem;
+  position: relative;
+}
+
+a.navbar-item:hover, a.navbar-item:focus {
+  color: $text;
+  background-color: transparent;
+}
+
+.navbar-item-hover {
+  position: absolute;
+  bottom: 50%;
+  right: 30%;
+  width: 120%;
+  height: 50%;
+  background-color: $yellow;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navbar-item:hover .navbar-item-hover {
+  opacity: 1;
 }
