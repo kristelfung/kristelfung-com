@@ -25,6 +25,12 @@ a.navbar-item:hover, a.navbar-item:focus {
   transition: opacity 0.2s ease-in-out;
 }
 
+// To select "active" page (current page)
+.is-active .navbar-item-hover {
+  opacity: 1;
+}
+
+// For the hover animation
 .navbar-item:hover .navbar-item-hover {
   opacity: 1;
 }
