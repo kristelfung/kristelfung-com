@@ -14,7 +14,6 @@ const Navbar = () => {
   const handleLinkHover = (event) => {
     setActiveLink(event.target)
   }
-  console.log(activeLink);
 
   return (
     <div className="hero-head">
