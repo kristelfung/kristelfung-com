@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.blog-link-text, .blog-link-text:hover {
+  color: $text;
+}
+
 .blog-item-hover {
   position: absolute;
   top: 0%;
