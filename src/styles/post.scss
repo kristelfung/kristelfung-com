@@ -4,6 +4,11 @@
 
 .back-item {
   position: relative;
+  color: $text;
+}
+
+.back-item:hover {
+  color: $text;
 }
 
 .back-item-hover {
