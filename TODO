@@ -1,9 +1,2 @@
-[x] render blog post titles in blog.js 
-[x] blog posts in order: most recent at top
-[x] createPage for each post + link to blog post
-[x] styles
-[x] animations for navbar
 [] animations for footer
-[x] README rewrite
-[x] 404 page
-[x] email button - copy link
+[x] site fade on load

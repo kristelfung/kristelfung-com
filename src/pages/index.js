@@ -6,11 +6,13 @@ import Footer from "./components/footer";
 
 import homeImg from '../img/home.png';
 
+import '../../src/styles/main.scss';
+
 const HomePage = ({data}) => {
   const { markdownRemark } = data
   const { title, subtitle } = markdownRemark.frontmatter
   return (
-    <section className="hero is-fullheight">
+    <section className="hero is-fullheight fade-in">
       <Navbar/>
       <div className="hero-body">
         <div className="container is-max-widescreen">

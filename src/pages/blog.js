@@ -3,6 +3,8 @@ import { graphql, Link } from 'gatsby'
 
 import Navbar from "./components/navbar";
 
+import '../../src/styles/main.scss';
+
 const BlogPage = ({data}) => {
   const { markdownRemark, allMarkdownRemark } = data
   const { frontmatter } = markdownRemark
@@ -12,7 +14,7 @@ const BlogPage = ({data}) => {
   })
   
   return (
-    <div className="container is-max-widescreen">
+    <div className="container is-max-widescreen fade-in">
       <Navbar/>
       <h1 className="title is-1">{frontmatter.title}</h1>
       {posts.map(({ node }) => {
