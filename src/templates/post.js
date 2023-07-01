@@ -3,6 +3,8 @@ import { graphql, Link } from "gatsby"
 
 import Navbar from "../pages/components/navbar";
 
+import '../../src/styles/main.scss';
+
 function BlogPostTemplate(props) {
   const post = props.data.markdownRemark
   return (
