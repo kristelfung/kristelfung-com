@@ -8,9 +8,9 @@
   position: relative;
 }
 
-a.navbar-item:hover, a.navbar-item:focus {
-  color: $text;
+a.navbar-item, a.navbar-item:hover, a.navbar-item:active, a.navbar-item.is-active {
   background-color: transparent;
+  color: $text;
 }
 
 .navbar-item-hover {

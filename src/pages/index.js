@@ -13,7 +13,9 @@ const HomePage = ({data}) => {
   const { title, subtitle } = markdownRemark.frontmatter
   return (
     <section className="hero is-fullheight fade-in">
-      <Navbar/>
+      <div className="hero-head">
+        <Navbar/>
+      </div>
       <div className="hero-body">
         <div className="container is-max-widescreen">
           <h1 className="title is-1">{title}</h1>
@@ -21,7 +23,9 @@ const HomePage = ({data}) => {
           <img src={homeImg} alt="kristel on laptop"/>
         </div>
       </div>
-      <Footer/>
+      <div className="hero-foot">
+        <Footer/>
+      </div>
     </section>
   )
 }
