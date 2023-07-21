@@ -1,6 +1,6 @@
 ---
 page: post
-slug: /physical-fitness-and-relationship-with-food
+slug: physical-fitness-and-relationship-with-food
 title: physical fitness and relationship with food
 date: 2023-07-21T23:56:40.207Z
 ---
