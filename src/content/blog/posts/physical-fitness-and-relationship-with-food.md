@@ -1,7 +1,7 @@
 ---
 page: post
-slug: physical-fitness-and-relationship-with-food
-title: physical fitness and relationship with food
+slug: fitness-and-relationship-with-food
+title: fitness and relationship with food
 date: 2023-07-21T23:56:40.207Z
 ---
 Food is a tricky subject. What is a good relationship with food? To be honest, I’m not really sure. Maybe a good relationship with food can mean different things for different people. I don’t claim to have the perfect relationship with food, but here are some of the things I’ve picked up thus far.
