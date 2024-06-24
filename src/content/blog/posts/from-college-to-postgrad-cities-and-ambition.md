@@ -43,5 +43,3 @@ Given this, my (maybe) controversial opinion is that New York City will never re
 I do think we are subconsciously drawn to environments whose values align with ours, so this is really a self fulfilling cycle: talents in tech don’t resonate with the values of NYC, and thus they are more comfortable in the bay. As a result, the majority of opportunities in tech are inevitably going to remain in the bay, where the talent is.
 
 Ultimately, New York is fun, but the bay feels like home. I miss how I usually get along with most new people I meet there, whereas this is less true for me in New York. So who knows, my chapter in New York may close sooner than I think.
-
-<!-- notionvc: eaf6ff64-2cc7-41e9-8ccf-6aff772a7f07 -->
