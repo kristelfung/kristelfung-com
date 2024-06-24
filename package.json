@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "bulma": "^0.9.4",
-    "gatsby": "^5.10.0",
+    "gatsby": "^5.13.0",
     "gatsby-plugin-netlify-cms": "^7.10.0",
     "gatsby-plugin-sass": "^6.11.0",
     "gatsby-source-filesystem": "^5.10.0",

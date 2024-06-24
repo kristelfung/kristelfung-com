@@ -12,7 +12,7 @@ npm install
 
 To start the site:
 ```
-gatsby develop
+npx gatsby develop
 ```
 
 The site will be running on `localhost:8000`. To access the content manager, go to `localhost:8000/admin`.
