@@ -8,4 +8,4 @@ I﻿ graduated from UC Berkeley in 2023 (go bears!), and I'm currently working f
 
 I﻿ redid my website as an exercise to use ChatGPT, which wrote most of this. It's actually shockingly good at simple projects.
 
-[G﻿ithub link](https://github.com/kristelfung/kristelfung-com). Built with [Gatsby](https://www.gatsbyjs.com/) and [Decap CMS](https://decapcms.org/). Hosted on [Netlify](https://www.netlify.com/).
+[](https://github.com/kristelfung/kristelfung-com)Built with [Gatsby](https://www.gatsbyjs.com/) and [Decap CMS](https://decapcms.org/). Hosted on [Netlify](https://www.netlify.com/).
