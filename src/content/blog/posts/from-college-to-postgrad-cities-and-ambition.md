@@ -1,9 +1,9 @@
 ---
 page: post
 title: "from college to postgrad: cities and ambition"
+hidden: false
 slug: from-college-to-postgrad-cities-and-ambition
 date: 2024-07-05T01:50:01.659Z
-hidden: true
 ---
 As I began my new grad job search, I had exactly one mission I needed to accomplish otherwise I would die: move to New York City. New York is exciting. It’s cool, there’s so much to do, it’s vibrant and so easy to meet people.
 
