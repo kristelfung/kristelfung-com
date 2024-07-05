@@ -1,7 +1,8 @@
 ---
 page: post
-slug: on-serendipity-luck-and-no-brainer-opportunities
 title: on serendipity, luck, and no brainer opportunities
+slug: on-serendipity-luck-and-no-brainer-opportunities
+hidden: false
 date: 2023-06-10T10:59:31.331Z
 ---
 A fellow club member and friend at Berkeley recently posed a question to me, "do you believe in luck?”

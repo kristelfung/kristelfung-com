@@ -37,6 +37,7 @@ collections:
     fields:
       - { name: page, label: Page, default: post, widget: hidden }
       - { name: title, label: Title }
+      - { name: hidden, label: Hidden, default: false, widget: boolean }
+      - { name: slug, label: Slug }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
-      - { name: hidden, label: Hidden, widget: boolean, required: false }
