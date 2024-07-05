@@ -12,7 +12,7 @@ collections:
     folder: src/content/home
     slug: home
     fields:
-      - { name: page, label: Page }
+      - { name: page, label: Page, default: home, widget: hidden }
       - { name: title, label: Title }
       - { name: subtitle, label: Subtitle }
   - name: about
@@ -20,7 +20,7 @@ collections:
     folder: src/content/about
     slug: about
     fields:
-      - { name: page, label: Page }
+      - { name: page, label: Page, default: about, widget: hidden }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: blog
@@ -28,15 +28,15 @@ collections:
     folder: src/content/blog
     slug: blog
     fields:
-      - { name: page, label: Page }
+      - { name: page, label: Page, default: blog, widget: hidden }
       - { name: title, label: Title }
   - name: post
     label: Post
     folder: src/content/blog/posts
     create: true
     fields:
-      - { name: page, label: Page }
-      - { name: slug, label: Slug }
+      - { name: page, label: Page, default: post, widget: hidden }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
+      - { name: hidden, label: Hidden, widget: boolean, required: false }
