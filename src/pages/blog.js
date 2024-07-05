@@ -24,7 +24,6 @@ const BlogPage = ({data}) => {
         <h1 className="title is-1">{frontmatter.title}</h1>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title
-          const slug = node.frontmatter.slug
           const date = node.frontmatter.date
 
           return (
