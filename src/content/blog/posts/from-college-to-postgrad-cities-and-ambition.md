@@ -1,8 +1,8 @@
 ---
 page: post
 title: "from college to postgrad: cities and ambition"
-date: 2024-07-05T01:50:01.659Z
 hidden: true
+date: 2024-07-05T01:50:01.659Z
 ---
 As I began my new grad job search, I had exactly one mission I needed to accomplish otherwise I would die: move to New York City. New York is exciting. It’s cool, there’s so much to do, it’s vibrant and so easy to meet people.
 
@@ -55,5 +55,3 @@ With this, my (maybe) controversial opinion is that New York City will never rep
 I do think we are subconsciously drawn to environments whose values align with ours, so this is really a self fulfilling cycle: talents in tech don’t resonate with the values of NYC, and thus they are more comfortable in the bay. As a result, the majority of opportunities in tech are inevitably going to remain in the bay, where the talent is.
 
 Ultimately, New York is fun, but I feel out of place here. The bay feels like home. So who knows, my chapter in New York may close sooner than I think.
-
-<!-- notionvc: 0bed68d2-b548-40bc-9940-859d27865d0f -->
