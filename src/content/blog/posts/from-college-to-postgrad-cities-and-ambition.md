@@ -7,7 +7,7 @@ date: 2024-07-05T11:49:35.648Z
 ---
 As I began my new grad job search, I had exactly one mission I needed to accomplish otherwise I would die: move to New York City. New York is exciting. It’s cool, there’s so much to do, it’s vibrant and so easy to meet people.
 
-The entire process revolved around this vision, with a New York office being the primary prerequisite.
+My entire recruiting process revolved around this vision, with a New York office being the primary prerequisite.
 
 After ten or so months of bulldozing through the Lower East Side, Brooklyn Mirage, and Marquee, I realize I may move back to the bay sooner than I think.
 
