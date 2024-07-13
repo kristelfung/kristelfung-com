@@ -15,7 +15,7 @@ Paul Graham wrote a great essay on [Cities and Ambition](https://paulgraham.com/
 
 After comparing my experiences on both coasts, my experiences have led me to believe this is incredibly true.
 
-I spent two years at New York University, where student culture is heavily influenced by New York City. I remember standing outside NYU Stern as I watched a herd of undergrads exit the building. The first thing I noticed was that all of them were extremely well dressed: students willingly displayed their wealth in terms of the clothes they wore. On Instagram stories, common posts were high end restaurants, Broadway shows, fancy bars, and shopping.
+I spent two years at New York University, where student culture is heavily influenced by New York City. I remember standing outside NYU Stern as I watched a herd of undergrads exit the building. The first thing I noticed was that all of them were extremely well dressed: students willingly displayed their wealth in terms of the designer clothes they wore. On Instagram stories, common posts were high end restaurants, Broadway shows, fancy bars, and shopping.
 
 Status, in terms of wealth and fame, is also a secondary value of New York City. Which makes sense, as oftentimes, status is a proxy for money. This also bleeds into the culture of NYU: the student body has a non-trivial amount of Instagram famous models, TikTokkers, and YouTubers. Probably not as large of a proportion as UCLA, but much more prominent than UC Berkeley. This also explains the two respectable fields of study of NYU: business and the arts. NYU Stern places well into investment banking roles, a role centered on making money. NYU Tisch produces significant amounts of notable alumni in entertainment. I’m sure a large motivator for entering the entertainment industry is fame and wealth, in addition to sharing art with the world.
 
@@ -31,7 +31,7 @@ The second thing I sensed was that the student body was really…humming with a 
 
 The final thing I noticed was how extremely broken and dirty some of my peers’ cars were. My friend accidentally knocked off her rearview mirror from a parking mishap, and for the remainder of the school year, the mirror remained attached to the car via duct tape.
 
-These observations are strongly indicative of how different UC Berkeley’s values are from NYU. Hard work and intellect are both extremely respected at Berkeley, whereas how much money you have, how nice your car is, how attractive you are, or how well you dress is not really valued. If UC Berkeley were to send a message, it would be “you should work harder”. If NYU were to send a message, it would be “you should be richer”.
+These observations are strongly indicative of how different UC Berkeley’s values are from NYU. Hard work and intellect are both extremely respected at Berkeley, whereas how much money you have, how nice your car is, how attractive you are, or how well you dress is not really valued. If UC Berkeley were to send a message, it would be “you should work harder.” If NYU were to send a message, it would be “you should be richer.”
 
 I speak very highly of Berkeley because I genuinely think the environment pushed me to grow in the ways I wanted to. I will forever be grateful for my peers because of this.
 
@@ -39,7 +39,7 @@ Now that I’m in back in New York City working full time, this underlying messa
 
 I was curious to see if my shift in social circles would cause the message of money to be less apparent, as I mostly spend time with Berkeley alumni who also moved to New York City. After all, your friends are a significant part of your environment, so surely, by selecting the friends I surround myself with, I can self select my environment. Despite this, I think the overall culture of the city is hard to ignore.
 
-To start off with an anecdote, my friend told me a funny story—she went on a date, and asked the date how his day was. He must’ve misheard, because he replied, “I work at Goldman Sachs”. There are also running jokes of which are the best bars or clubs to go to if you’re looking to date a “finance bro”, which is cool, but meeting professionals in finance is not something I am super interested in.
+To start off with an anecdote, my friend told me a funny story—she went on a date, and asked the date how his day was. He must’ve misheard, because he replied, “I work at Goldman Sachs.” There are also running jokes of which are the best bars or clubs to go to if you’re looking to date a “finance bro,” which is cool, but meeting professionals in finance is not something I am super interested in.
 
 Additionally, I’ve noticed that an overwhelmingly popular activity amongst young professionals is going out to eat. There seems to be this mysterious obsession with getting reservations at certain restaurants, such as Don Angie. Curious about the hype, my friends and I attempted to run a Resy bot to secure a reservation at this extremely hot restaurant. However, the Resy bot failed to beat the army of 1000 secretaries refreshing the page at exactly 9:00 AM as well, and we gave up.
 
