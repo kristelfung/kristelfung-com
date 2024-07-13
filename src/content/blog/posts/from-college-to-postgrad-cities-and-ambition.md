@@ -11,7 +11,7 @@ My entire recruiting process revolved around this vision, with a New York office
 
 After ten or so months of bulldozing through the Lower East Side, Brooklyn Mirage, and Marquee, I realize I may move back to the bay sooner than I think.
 
-Paul Graham wrote a great essay on [Cities and Ambition](https://paulgraham.com/cities.html). The summary is as follows: each great city sends a message. In New York City, the message is “you should make more money.” In the Bay Area, it is “you should be more powerful.”
+Paul Graham wrote a great essay on [Cities and Ambition](https://paulgraham.com/cities.html). The summary is as follows: each great city sends a message. In New York City, the message is “you should make more money.” In the bay area, it is “you should be more powerful.”
 
 After comparing my experiences on both coasts, my experiences have led me to believe this is incredibly true.
 
@@ -57,4 +57,8 @@ I do think we are subconsciously drawn to environments whose values align with o
 
 Ultimately, New York is fun, but I feel out of place here. The bay feels like home. So who knows, my chapter in New York may close sooner than I think.
 
-Edit: As an afterthought, I think it’s necessary to bring up that 1) NYU is a private school, whereas UC Berkeley is a public state university. They are opposites in many ways, and this probably contributes to a large bias in my comparison. If I could experience, say, Columbia versus Stanford, some confounding variables may have been eliminated. I don’t think there’s an equivalent of UC Berkeley in NYC. 2) There is a lot of beauty to New York, such as culture and the arts, but I will confess I don’t have much interest in either. Both of which are very valuable parts of NYC that I’m unable to appreciate!
+Notes/afterthoughts:
+
+1. NYU is a private school, whereas UC Berkeley is a public state university. They are opposites in many ways, and this probably contributes to a large bias in my comparison. If I could experience, say, Columbia versus Stanford, some confounding variables may have been eliminated. I don’t think there’s an equivalent of UC Berkeley in NYC.
+2. There is a lot of beauty to New York, such as culture and the arts. I confess I don’t have much interest in either, so I’m unable to appreciate this.
+3. Paul G doesn’t describe Berkeley as an ambitious place, and this is because I believe being a student at UC Berkeley versus living in Berkeley as an adult is drastically different. The talent in Berkeley is highly concentrated in the student body of UC Berkeley. If you’re not a student, you won’t really interact with this demographic. I imagine as an adult, you probably would not want to either. Additionally, most alumni from Cal don’t stay in Berkeley, they often move out to SF or other parts of the bay.
