@@ -11,7 +11,7 @@ My entire recruiting process revolved around this vision, with a New York office
 
 After ten or so months of bulldozing through the Lower East Side, Brooklyn Mirage, and Marquee, I realize I may move back to the bay sooner than I think.
 
-Paul Graham wrote a great essay on [Cities and Ambition](https://paulgraham.com/cities.html). The summary is as follows: each great city sends a message. In New York City, the message is “you should make more money.” In the bay area, it is “you should be more powerful.”
+Paul Graham wrote a great essay on [Cities and Ambition](https://paulgraham.com/cities.html). The summary is as follows: each great city sends a message. In New York City, the message is “you should make more money.” In the Bay Area, it is “you should be more powerful.”
 
 After comparing my experiences on both coasts, my experiences have led me to believe this is incredibly true.
 
