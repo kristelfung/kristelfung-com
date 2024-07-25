@@ -19,9 +19,9 @@ I spent two years at a private university in New York City, where student cultur
 
 Status, in terms of fame and how well connected you are, is also a secondary value of New York City. Which makes sense, as oftentimes, status is a proxy for money. This also bleeds into the culture of this college: the student body has a non-trivial amount of Instagram models, TikTokkers, and YouTubers. Probably not as large of a proportion as UCLA, but much more prominent than UC Berkeley. This also explains the two respectable fields of study at this college: business and the arts. The business school places well into investment banking roles, a role centered on making money. The school of the arts produces significant amounts of notable alumni in entertainment. I’m sure a large motivator for entering the entertainment industry is fame and wealth, in addition to sharing art with the world.
 
-I’m not too interested in business, and obviously I am not training to be the next Lady Gaga. My intuition told me to leave, but only now as I’ve matured can I really articulate why this college in NYC was not the right place for me. Graham summarizes this quite concisely:
+I’m not too interested in business, and obviously I am not training to be the next Lady Gaga. My intuition told me to leave, but only now as I’ve matured can I really articulate why New York City was not the right place for me. Graham summarizes this quite concisely:
 
-> “No matter how determined you are, it's hard not to be influenced by the people around you. It's not so much that you do whatever a city expects of you, but that you get discouraged when no one around you cares about the same things you do.”
+“No matter how determined you are, it's hard not to be influenced by the people around you. It's not so much that you do whatever a city expects of you, but that you get discouraged when no one around you cares about the same things you do.”
 
 Ultimately, I think I sensed that my ambitions, values, and goals were different from the students around me. So I transferred to the University of California, Berkeley.
 
