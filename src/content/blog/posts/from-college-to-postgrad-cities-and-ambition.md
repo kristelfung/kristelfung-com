@@ -1,7 +1,7 @@
 ---
 page: post
-title: "from college to postgrad: cities and ambition"
-hidden: false
+title: "from college to postgrad: cities and ambition [hidden]"
+hidden: true
 slug: from-college-to-postgrad-cities-and-ambition
 date: 2024-07-05T11:49:35.648Z
 ---
