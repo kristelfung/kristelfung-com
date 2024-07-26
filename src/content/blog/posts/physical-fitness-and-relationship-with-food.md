@@ -1,8 +1,8 @@
 ---
 page: post
 title: fitness and relationship with food
-slug: fitness-and-relationship-with-food
 hidden: false
+slug: fitness-and-relationship-with-food
 date: 2023-07-21T23:56:40.207Z
 ---
 Food is a tricky subject. What is a good relationship with food? To be honest, I’m not really sure. Maybe a good relationship with food can mean different things for different people. I don’t claim to have the perfect relationship with food, but here are some of the things I’ve picked up thus far.
@@ -11,7 +11,7 @@ To preface, there are many ways to enjoy life. Some people like eating whatever 
 
 Modern society has discovered ways to hack our dopamine receptors. TikTok, Instagram, and algorithmic feeds tailor content to release the most dopamine in its users. Another way these dopamine “hacks” have manifested themselves is in food. Highly processed foods such as Doritos are engineered to have the optimal amount of fats, acid, and sodium such that each chip releases as much dopamine as possible. McDonald's fries have an equilibrium of salt, sugar (dextrose), and fat that puts it in the “goldilocks” zone of tastiness. These foods are tasty because our brains crave fats and sugars, which makes sense. In our hunter gatherer days, fats and sugars corresponded to more calories and thus more fuel, which was important if our next meal wasn’t guaranteed. However, in modern society, most of us are neither hunting nor gathering, yet this outdated instinct for fats and sugars has stayed the same.
 
-Frankly, I’m shocked that junk food is legal but cocaine and heroin aren’t. Yes, the damage of hard drugs are fast acting and are more irreversible than eating garbage, but the premise is the same. In the book *How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease* by Michael Gregor, which partially inspired this blog post, Gregor opens with an anecdote of his grandmother who almost died of heart disease. She miraculously recovered to live another 31 years after transitioning to a plant-based diet, even though she was supposed to die at 65. The toxins in processed foods is analogous to a drug: food that is delicious in the moment, but slowly destroys your body over years of abuse. To a lesser degree, even restaurant food can be damaging in excess, due to added fats and sugars. On an unrelated note, Gregor also described an instance of a smoking patient dying as his lungs filled with fluid, and with that, I immediately threw away my vape. Regardless, at the very least, junk food in America should be regulated far more.
+Frankly, I’m shocked that junk food is legal but cocaine and heroin aren’t. Yes, the damage of hard drugs are fast acting and are more irreversible than eating garbage, but the premise is the same. I actually read a book on nutrition where the author’s grandmother who almost died of heart disease. She miraculously recovered to live another 31 years after transitioning to a plant-based diet, even though she was supposed to die at 65. The toxins in processed foods is analogous to a drug: food that is delicious in the moment, but slowly destroys your body over years of abuse. To a lesser degree, even restaurant food can be damaging in excess, due to added fats and sugars. On an unrelated note, the author also described an instance of a smoking patient dying as his lungs filled with fluid, and with that, I immediately threw away my vape. Regardless, at the very least, junk food in America should be regulated far more.
 
 So what is the solution? If many good tasting foods are poisonous, should we never eat them?
 
