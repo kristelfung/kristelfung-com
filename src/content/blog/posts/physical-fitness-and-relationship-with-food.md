@@ -1,7 +1,7 @@
 ---
 page: post
 title: fitness and relationship with food
-hidden: false
+hidden: true
 slug: fitness-and-relationship-with-food
 date: 2023-07-21T23:56:40.207Z
 ---
