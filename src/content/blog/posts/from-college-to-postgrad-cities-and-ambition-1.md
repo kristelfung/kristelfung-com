@@ -59,6 +59,8 @@ Ultimately, New York is fun, but I feel out of place here. The bay feels like ho
 
 Notes/afterthoughts:
 
+
+
 1. The college I attended in NYC is a private school, whereas UC Berkeley is a public state university. They are opposites in many ways, and this probably contributes to a large bias in my comparison. If I could experience, say, Columbia versus Stanford, some confounding variables may have been eliminated. I don’t think there’s an equivalent of UC Berkeley in NYC.
-2. There is a lot of beauty to New York, such as culture and the arts. I confess I don’t have much interest in either, so I’m unable to appreciate this.
-3. Paul G doesn’t describe Berkeley as an ambitious place, and this is because I believe being a student at UC Berkeley versus living in Berkeley as an adult is drastically different. The talent in Berkeley is highly concentrated in the student body of UC Berkeley. If you’re not a student, you won’t really interact with this demographic. I imagine as an adult, you probably would not want to either. Additionally, most alumni from Cal don’t stay in Berkeley, they often move out to SF or other parts of the bay
+2. There is a lot of beauty to New York, such as culture and the arts. Reducing NYC to “money” can be a simplistic view of the place. I confess I don’t have much interest in culture or art, so I’m unable to appreciate some of the beautiful parts of New York.
+3. Paul G doesn’t describe Berkeley as an ambitious place, and this is because I believe being a student at UC Berkeley versus living in Berkeley as an adult is drastically different. The talent in Berkeley is highly concentrated in the student body of UC Berkeley. If you’re not a student, you won’t really interact with this demographic. I imagine as an adult, you probably would not want to either. Additionally, most alumni from Cal don’t stay in Berkeley, they often move out to SF or other parts of the bay.
