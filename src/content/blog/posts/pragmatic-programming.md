@@ -13,7 +13,7 @@ Implementing the “easy to read” concept lends itself to ideal side effects: 
 
 [Another way to describe code that’s “easy to read” is code that requires the smallest amount of cognitive load to understand.](https://minds.md/zakirullin/cognitive)
 
-## Pragmatic programming
+# P﻿ragmatic programming
 
 **DRY: Do not repeat yourself**
 
@@ -339,7 +339,7 @@ Consider the **Single responsibility principle:** classes should have one respon
 
 For example, a `Cashier` class should be in charge of managing money at the register only. It should not be taking orders for the store.
 
-## Tackling a problem
+# T﻿ackling a problem
 
 **You need a plan.**
 
@@ -370,7 +370,7 @@ Experimenting in a controlled manner
 
 * Change one variable at a time and compare outcomes. Practice systematic debugging.
 
-## General laws to abide by
+# General laws to abide by
 
 **Do not program by coincidence**
 
@@ -386,7 +386,7 @@ Just because something worked in the past doesn’t mean it works now. Using pas
 
 Create a working first draft. It does not have to be clean as long as the foundation of your solution is correct. Then, clean it up with pragmatic programming practices. We can use test driven development to make sure we’re not breaking things, and refactor incrementally.
 
-## Further reading
+# Further reading
 
 * <https://minds.md/zakirullin/cognitive>
 * The Pragmatic Programmer
