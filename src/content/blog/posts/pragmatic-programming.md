@@ -1,0 +1,393 @@
+---
+page: post
+title: pragmatic programming
+hidden: false
+slug: pragmatic-programming
+date: 2024-12-26T11:24:48.420Z
+---
+This is a collection of pragmatic programming practices I’ve learned from reading, working, and reading more.
+
+The one golden rule: make your code **easy to read.**
+
+Implementing the “easy to read” concept lends itself to ideal side effects: easy to change, DRY, pure functions, single responsibility principle, and more.
+
+[Another way to describe code that’s “easy to read” is code that requires the smallest amount of cognitive load to understand.](https://minds.md/zakirullin/cognitive)
+
+## Pragmatic programming
+
+**DRY: Do not repeat yourself**
+
+```python
+# Not DRY! 😵
+def make_matcha_americano():
+  scoop_matcha()
+  whisk()
+  pour_in_cup()
+  add_water()
+
+def make_matcha_latte():
+  scoop_matcha()
+  whisk()
+  pour_in_cup()
+  add_milk()
+```
+
+STOP! What if we want to make both drinks iced? We need to call `add_ice()` before all the `pour_in_cup()`. What if we have 1000 variations of this matcha drink? (Sesame, Ube, yum.) We’d have to include `add_ice()` 1000 times to all these matcha functions.
+
+Let’s practice DRY. Combine the shared steps into`_make_matcha_base()`.
+
+```python
+# DRY. 😎
+def make_matcha_americano():
+  _make_matcha_base()
+  add_water()
+
+def make_matcha_latte():
+  _make_matcha_base()
+  add_milk()
+
+def _make_matcha_base():
+  scoop_matcha()
+  whisk()
+  pour_in_cup()
+```
+
+This reduces code duplication. Less chance of bugs, and a single source of truth.
+
+Do not mistake this with trying to force DRY with functions that do the same thing, but have different meaning. For example:
+
+```python
+# These functions use sum() but have different business meanings
+# Don't combine them just because they share an implementation detail!
+def exam_score(lst_of_questions: List[]):
+  return sum(lst_of_questions) # Represents academic performance
+
+def cost_of_meal(lst_of_food_items: List[]):
+  return sum(lst_of_food_items)  # Represents monetary value
+```
+
+**Orthogonal**
+
+Functions should be orthogonal.
+
+Flying a helicopter is not orthogonal. Changing one control affects multiple outputs—pushing forward the stick changes pitch, altitude, and speed all at the same time.
+
+Do not build helicopters. Every function must be focused, must have unique/independent functionality, and should not affect other systems.
+
+**Design by contract**
+
+Functions should have clear:
+
+* Preconditions
+* Postconditions
+* Error cases
+
+```python
+def divide(a: float, b: float) -> float:
+  """
+  Precondition: b != 0
+  Postcondition: returns a/b
+  Error: raises ValueError if b == 0
+  """
+  if b == 0:
+    raise ValueError("Cannot divide by zero")
+  return a / b
+```
+
+**Decoupling**
+
+Unrelated functionality should not be tied together. Let’s say we have a right click menu that shows options, and these options also show up in a spotlight-type search bar.
+
+```python
+# Coupled: Search items depend on right-click menu structure 😱
+def get_right_click_items():
+  return [
+    {
+      "label": "Cut", 
+      "shortcut": "⌘X",
+      "right_click_action": "cut"  # Right-click specific
+    }
+  ]
+
+def get_search_items():
+  # Search directly uses right-click menu items!
+  right_click_items = get_right_click_items()
+  return [{
+    "label": item["label"],
+    "action": item["right_click_action"]  # Oops, tied to right-click logic
+  } for item in right_click_items]
+```
+
+If we change the right-click menu structure, the search items can break unexpectedly! Let’s decouple this.
+
+```python
+# Decoupled: Each menu handles its own items 😎
+def get_right_click_items():
+  return [{"label": "Cut", "action": "cut", "shortcut": "⌘X"}]
+
+def get_search_items():
+  return [{"label": "Cut", "action": "cut"}]  # Independent!
+```
+
+**Transformation programming**
+
+We can think of functions as purely transforming data → data.
+
+**Functions**
+
+Functions should do something or answer something. They also
+
+* Should be small
+* Should DO ONE THING WELL
+* Should try to have 2 indents at most (a more loose personal rule)
+
+  * *Take advantage of early returns vs a ton of nested conditionals.*
+
+**Functions—Levels of abstraction**
+
+Try to keep one level of abstraction per function.
+
+```python
+# Mixing levels of abstraction 😵
+def register_user():
+  salt = generate_salt()                      # Low level: crypto details
+  hash = hashlib.sha256()                     # Low level: hashing implementation
+  save_user_to_db(hash.hexdigest())          # High level: database operation
+```
+
+Let’s not mix crypto details with db calls.
+
+```python
+# One level of abstraction 😎
+def register_user():
+  hash = hash_password()           # Each line is a similar "chunk"
+  save_user_to_db(hash)            # No crypto details mixed with db calls!
+```
+
+**Functions—Pure functions**
+
+Functions should always return the same output for the same input, and have no side effects (no changes to the outside world). Side effects are LIES!
+
+```python
+# Impure: Full of side effects! 😱
+def create_matcha_americano():
+  inventory.matcha -= 1           # Side effect: changes global state, inventory
+  clean_kristels_room()           # Side effect: cleans my room
+  return "Here's your matcha!"
+```
+
+This function `create_matcha_americano()` \*\*is lying! It says it's making matcha, but it's secretly reducing inventory AND cleaning my room. Why is it cleaning my room?
+
+Change this function to a pure function.
+
+```python
+# Pure: No surprises, just matcha.
+def create_matcha_americano(inventory):
+  if inventory.has_matcha():
+    return {
+      "drink": "matcha americano",
+      "remaining_matcha": inventory.matcha - 1
+    }
+  return {
+    "error": "out of matcha"
+  }
+```
+
+**Functions—Arguments**
+
+The less arguments the better. Try not to have more than 3. We can use objects—do not worry, that is not cheating. Being able to group arguments into an object means the information is related to each other. DO NOT use booleans for arguments.
+
+```python
+# Too many arguments 😵
+def create_user(name, email, age, city, state, country, phone, premium):
+  # So many parameters to track!
+  if premium:  # Boolean flag - what does this even mean?
+      # ... 
+```
+
+So many args, let’s reduce them.
+
+```python
+# Better: Use an object 😎
+def create_user(user_info):
+  # All details neatly contained in one object
+```
+
+**Comments**
+
+COMMENTS DO NOT MAKE UP FOR BAD CODE. Use comments extremely sparingly. They have to be kept in sync with the code and will eventually become outdated.
+
+**Naming**
+
+Do not use useless words. `CustomerData` vs `CustomerInfo`? `PluginController` vs `PluginManager`? Data and Info, Controller and Manager are not great suffixes to add to class names. `Customer` is sufficient enough.
+
+**Vertical formatting**
+
+Keep variables close to usage, and callers above callees. We want to read top to bottom, left to right.
+
+**Objects and data structures**
+
+Objects hide data behind abstractions and expose functions. Think of objects like a vending machine 🤖
+
+* You don't care how it stores drinks inside
+* You just press buttons to get what you want
+* It hides all the messy details behind a nice interface
+
+Data structures expose data and have no meaningful functions. Think of data structures like a box of Legos 🧱
+
+* All the pieces are right there to see and use
+* No hidden machinery, just pure data
+* You decide how to use the pieces
+
+```python
+# Vending machine (Object) - Hides details
+class VendingMachine:
+  def __init__(self):
+    self._drinks = {}  # Private! Don't touch!
+
+  def get_drink(self, selection):  # Nice clean interface
+    return self._drinks[selection]
+
+
+# Lego box (Data Structure) - Everything visible
+class LegoBox:
+  bricks = []  # Public! Here's all the data
+  colors = []
+```
+
+Do not mix the two and create hybrids.
+
+**Law of Demeter**
+
+Only talk to your friends. \*\*\*\*Don't reach through objects to talk to their objects. It creates brittle chains of dependencies.
+
+```python
+# BAD: Reaching through objects 😱
+user.getShoppingCart().getItems().getTotal()  # Too nosy, mind your own business...
+
+# GOOD: Just talk to your friend 😎
+user.getCartTotal()  # Let user handle the details
+```
+
+**Error handling**
+
+Think in try-catch-finally blocks. This separates error-handling code from the main logic.
+
+```python
+def process_data(data):
+  try:
+    # Attempt to process data
+    result = int(data)  # Might raise ValueError
+    return result * 2
+  except ValueError:
+    # Handle specific error
+    print("Invalid data type")
+    return None
+  finally:
+    # Always executes, cleanup or logging
+    print("Processing complete")
+```
+
+**Boundaries**
+
+You can wrap 3rd party code (API) in a class for encapsulation!
+
+```python
+class WeatherAPI:
+  def __init__(self):
+    self._client = ThirdPartyWeather()
+
+  def get_temp(self, city: str) -> float:
+    try:
+      data = self._client.get_weather(city)
+      return data.get('temp') or data['main']['temp'] 
+    except APIError:
+      return None
+```
+
+This hides all the implementation of `ThirdPartyWeather()` in our `WeatherAPI` class. If the API changes, the user is not exposed to the changes.
+
+**Tests**
+
+Test a single concept per test.
+
+```python
+# Bad: Testing multiple concerns 😱
+def test_user():
+  user = register("alice@email.com")
+  assert user.email == "alice@email.com"
+  assert user.is_active
+  assert in_database(user)
+```
+
+We’re checking the email and the active status. Let’s separate these.
+
+```python
+# Good: One concept per test 😎  
+def test_email():
+  assert register("alice@email.com").email == "alice@email.com"
+
+def test_active():
+  assert register("bob@email.com").is_active
+```
+
+**Classes**
+
+Classes should be small. Names like Processor, Manager, or Super ARE DANGEROUS!
+
+Consider the **Single responsibility principle:** classes should have one responsibility.
+
+For example, a `Cashier` class should be in charge of managing money at the register only. It should not be taking orders for the store.
+
+## Tackling a problem
+
+**You need a plan.**
+
+Without a plan, your computer and brain will explode. If you don’t know what you’re doing, create a plan with a series of minor goals. Even if some goals seem tangential to the main problem, you will make measurable progress toward a solution and feel that your time has been spent usefully.
+
+**Understand the problem**
+
+Restate the problem. Many times I have yapped to myself in a phone booth, and just from verbalizing the problem, I discovered why something was not working.
+
+* Constraints: what restrictions do I have?
+* Operations: what actions can I take?
+
+**Techniques**
+
+Start with what you know.
+
+* Like a sudoku puzzle, if a square has 8 numbers filled, you can fill the 9th one, and build up a solution from there.
+
+Experimenting with a subproblem.
+
+* Reduce the problem. For instance, given a list of 3D coordinates, we are asked to find the two that are closest to each other. What if we reduced the problem to 2D? What if we only had 3 values in this list?
+
+Finding the most constrained part of the problem
+
+* Let’s say we are managing a boba store and need to assign worker shifts. Let’s say, without fail, 9:00am on Monday is the time of highest traffic: an army of 50 college students take the boba shop by storm. We can then plan staffing around this.
+
+Experimenting in a controlled manner
+
+* Change one variable at a time and compare outcomes. Practice systematic debugging.
+
+## General laws to abide by
+
+**Do not program by coincidence**
+
+Finding an answer that happens to fit is not the same as the right answer. Don’t assume it, prove it.
+
+When things break, if you don’t understand exactly how you got somewhere, you will have no idea why things are broken.
+
+**Don’t be a slave to history.**
+
+Just because something worked in the past doesn’t mean it works now. Using past code is great, but make sure to understand why it works.
+
+**Successive refinement**
+
+Create a working first draft. It does not have to be clean as long as the foundation of your solution is correct. Then, clean it up with pragmatic programming practices. We can use test driven development to make sure we’re not breaking things, and refactor incrementally.
+
+## Further reading
+
+* <https://minds.md/zakirullin/cognitive>
+* The Pragmatic Programmer
+* Clean Code
