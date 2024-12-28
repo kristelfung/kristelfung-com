@@ -14,18 +14,15 @@ export default async function Page({
 }) {
   const slug = (await params).slug;
 
-  // Read the MDX file
   const postPath = path.join(process.cwd(), `src/app/blog/content/${slug}.mdx`);
   const fileContent = fs.readFileSync(postPath, "utf8");
 
-  // Parse and strip frontmatter
   const {
     data: { title, date },
     content,
   } = matter(fileContent);
   const formattedDate = formatDate(date);
 
-  // Compile the MDX content without frontmatter
   const { content: Content } = await compileMDX({
     source: content,
     options: {

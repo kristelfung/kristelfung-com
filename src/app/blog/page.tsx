@@ -1,27 +1,32 @@
-import path from "path";
-import fs from "fs";
-import Link from "next/link";
-import matter from "gray-matter";
 import { formatDate } from "@/utils/date";
+import matter from "gray-matter";
+import Link from "next/link";
+import { readFile, readdir } from "node:fs/promises";
+import path from "node:path";
 
-export default function Blog() {
+export default async function Blog() {
   const postsDirectory = path.join(process.cwd(), "src/app/blog/content");
-  const files = fs.readdirSync(postsDirectory);
+  const files = await readdir(postsDirectory);
 
-  const posts = files
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => {
-      const content = fs.readFileSync(path.join(postsDirectory, file), "utf8");
-      const { data: frontmatter } = matter(content);
+  const posts = await Promise.all(
+    files
+      .filter((file) => file.endsWith(".mdx"))
+      .map(async (file) => {
+        const content = await readFile(path.join(postsDirectory, file), "utf8");
+        const { data: frontmatter } = matter(content);
 
-      return {
-        slug: file.replace(".mdx", ""),
-        title: frontmatter.title,
-        date: frontmatter.date,
-        formattedDate: formatDate(frontmatter.date),
-      };
-    })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        return {
+          slug: file.replace(".mdx", ""),
+          title: frontmatter.title,
+          date: frontmatter.date,
+          formattedDate: formatDate(frontmatter.date),
+        };
+      })
+  ).then((posts) =>
+    posts.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    )
+  );
 
   return (
     <div className="py-6">
