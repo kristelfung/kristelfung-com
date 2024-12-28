@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fcf5ed;
+  --foreground: #080321;
+  --highlight: #ffe404;
+}
+
+/* TODO: dark mode?
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
