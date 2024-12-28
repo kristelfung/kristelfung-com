@@ -34,7 +34,7 @@ export default function Blog() {
                 aria-hidden="true"
                 className="absolute -left-8 top-[10%] w-2 h-[80%] bg-highlight opacity-0 transition-opacity duration-100 ease-in-out group-hover:opacity-100"
               />
-              <Link href={`/blog/${post.slug}`}>
+              <Link href={`/blog/${post.slug}`} prefetch>
                 <h2 className="text-3xl">{post.title}</h2>
                 <p className="text-xl">{post.formattedDate}</p>
               </Link>

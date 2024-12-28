@@ -1,3 +1,7 @@
+## Kristel's Website
+
+Leaving the original README here, as this has instructions on how to run the site locally.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
