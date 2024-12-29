@@ -28,7 +28,7 @@ export default async function Page({
     options: {
       parseFrontmatter: true,
       mdxOptions: {
-        rehypePlugins: [[rehypePrettyCode]],
+        rehypePlugins: [rehypePrettyCode],
       },
     },
   });
