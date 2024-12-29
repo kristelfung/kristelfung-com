@@ -6,16 +6,11 @@ export default function FadeIn({ children }: { children: React.ReactNode }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    Promise.all(
-      Array.from(document.images)
-        .filter((img) => !img.complete)
-        .map(
-          (img) =>
-            new Promise((resolve) => (img.onload = img.onerror = resolve))
-        )
-    ).then(() => {
+    const timer = setTimeout(() => {
       setIsVisible(true);
-    });
+    }, 10);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

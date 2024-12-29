@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 };
 
 import { EB_Garamond } from "next/font/google";
-import FadeIn from "./components/fade_in";
 
 const garamond = EB_Garamond({
   subsets: ["latin"],
@@ -24,12 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={garamond.className}>
       <body>
-        <FadeIn>
-          <Container>
-            <Navbar />
-            {children}
-          </Container>
-        </FadeIn>
+        <Container>
+          <Navbar />
+          {children}
+        </Container>
       </body>
     </html>
   );
