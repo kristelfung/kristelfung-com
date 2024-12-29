@@ -52,3 +52,14 @@ export default async function Page({
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  const postsDirectory = path.join(process.cwd(), "src/app/blog/content");
+  const files = fs.readdirSync(postsDirectory);
+
+  return files
+    .filter((filename) => filename.endsWith(".mdx"))
+    .map((filename) => ({
+      slug: filename.replace(".mdx", ""),
+    }));
+}
