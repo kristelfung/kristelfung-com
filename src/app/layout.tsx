@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Container from "./components/container";
 import Navbar from "./components/navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "kristelfung.com",
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </Container>
+        <Analytics />
       </body>
     </html>
   );
