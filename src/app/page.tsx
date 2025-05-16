@@ -7,7 +7,7 @@ export default function Home() {
       <div className="py-8">
         <h1 className="text-5xl">
           <span className="block py-2">hi! i&apos;m kristel,</span>
-          <span className="block py-2">a software engineer based in nyc.</span>
+          <span className="block py-2">a software engineer based in sf.</span>
         </h1>
         <Image
           src="/home.png"
