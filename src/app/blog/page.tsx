@@ -55,7 +55,7 @@ export default async function Blog() {
               <div key={post.slug} className="py-4 relative group">
                 <div
                   aria-hidden="true"
-                  className="absolute -left-20 top-[10%] w-2 h-[80%] bg-highlight opacity-0 transition-opacity duration-100 ease-in-out group-hover:opacity-100"
+                  className="absolute -left-12 top-[10%] w-2 h-[80%] bg-highlight opacity-0 transition-opacity duration-100 ease-in-out group-hover:opacity-100"
                 />
                 {post.pinned && (
                   <Image
