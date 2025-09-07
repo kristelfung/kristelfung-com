@@ -15,7 +15,7 @@ export default function Navbar() {
   const [isAnyHovered, setIsAnyHovered] = useState(false);
 
   return (
-    <nav className="flex items-center justify-end gap-16 h-36">
+    <nav className="flex items-center justify-end gap-10 md:gap-16 h-36">
       {navItems.map(({ href, label }) => {
         const isActive =
           href === "/" ? pathname === href : pathname.startsWith(href);
