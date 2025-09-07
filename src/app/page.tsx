@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "./components/footer";
 import FadeIn from "./components/fade_in";
+
 export default function Home() {
   return (
     <FadeIn>
@@ -9,13 +11,26 @@ export default function Home() {
           <span className="block py-2">hi! i&apos;m kristel,</span>
           <span className="block py-2">a lifelong learner living in sf.</span>
         </h1>
-        <Image
-          src="/home.png"
-          alt="homepage-image"
-          width={1063}
-          height={308}
-          className="ml-auto w-[600px]"
-        />
+        <div className="group ml-auto w-full max-w-[600px] relative">
+          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-12 right-[27%] z-10">
+            <Image
+              src="/lightbulb.png"
+              alt="lightbulb"
+              width={30}
+              height={30}
+              className="w-10 h-10"
+            />
+          </div>
+          <Link href="/idea">
+            <Image
+              src="/home.png"
+              alt="homepage-image"
+              width={1063}
+              height={308}
+              className="w-full cursor-pointer"
+            />
+          </Link>
+        </div>
       </div>
       <Footer />
     </FadeIn>
