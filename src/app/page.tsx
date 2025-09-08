@@ -11,14 +11,14 @@ export default function Home() {
           <span className="block py-2">hi! i&apos;m kristel,</span>
           <span className="block py-2">a lifelong learner living in sf.</span>
         </h1>
-        <div className="group ml-auto w-full max-w-[600px] relative">
-          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-12 right-[27%] z-10">
+        <div className="group ml-auto w-full max-w-[600px] relative pt-4">
+          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-10 md:-top-20 right-[25%] z-10">
             <Image
               src="/lightbulb.png"
               alt="lightbulb"
-              width={30}
-              height={30}
-              className="w-10 h-10"
+              width={100}
+              height={100}
+              className="w-12 h-12 md:w-16 md:h-16"
             />
           </div>
           <Link href="/idea">
