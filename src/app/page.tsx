@@ -18,7 +18,7 @@ export default function Home() {
               alt="lightbulb"
               width={100}
               height={100}
-              className="w-12 h-12 md:w-16 md:h-16"
+              className="w-10 h-10 md:w-16 md:h-16"
             />
           </div>
           <Link href="/idea">
